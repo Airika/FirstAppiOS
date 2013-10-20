@@ -13,10 +13,12 @@
 {
     IBOutlet UILabel *MissionSelect;
     IBOutlet UILabel *label;
+    IBOutlet UILabel *label2;
+    IBOutlet UISlider *slider2;
 }
 
 -(IBAction) Button:(id)sender;
 -(IBAction)slider:(id)sender;
-
+-(IBAction)slider2:(id)sender;
 
 @end

@@ -16,7 +16,7 @@
 
 -(IBAction) Button:(id)sender{
     
-    MissionSelect.text = [NSString stringWithFormat:@"Click Switch to Start"];
+    MissionSelect.text = [NSString stringWithFormat:@"Press Switch to Start"];
 }
 
 - (void)viewDidLoad
@@ -39,4 +39,17 @@
     label.font = [UIFont systemFontOfSize:fonts];
     label.text = newtext;
 }
+
+- (IBAction)slider2:(id)sender {
+    if (self->slider2.value > 3) {
+        self->label2.text = @"Small Party";
+        NSLog(@"Small Party");
+    } else {
+        self->label2.text = @"Large Party";
+        NSLog(@"Large Party");
+    }
+    
+}
+
 @end
+
