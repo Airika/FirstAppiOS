@@ -10,6 +10,14 @@
 
 @interface ViewController : UIViewController
 
-@property (nonatomic, weak) IBOutlet UISwitch *mySwitch;
+{
+    IBOutlet UILabel *MissionSelect;
+    
+}
+
+-(IBAction) Button:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *sliderDisplay;
+@property (weak, nonatomic) IBOutlet UISlider *setValue;
+- (IBAction)applyChanges:(id)sender;
 
 @end
