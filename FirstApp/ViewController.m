@@ -16,7 +16,7 @@
 
 -(IBAction) Button:(id)sender{
     
-    MissionSelect.text = [NSString stringWithFormat:@"Click Switch"];
+    MissionSelect.text = [NSString stringWithFormat:@"Click Switch to Start"];
 }
 
 - (void)viewDidLoad
@@ -31,7 +31,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)applyChanges:(id)sender {
-    _sliderDisplay.text = [NSString stringWithFormat:@"Value is %1.2f", _setValue.value];
+-(IBAction)slider:(id)sender {
+    
+    UISlider *slider = (UISlider *)sender;
+    int fonts = (int)(slider.value);
+    NSString *newtext = [NSString stringWithFormat:@"%d", fonts];
+    label.font = [UIFont systemFontOfSize:fonts];
+    label.text = newtext;
 }
 @end

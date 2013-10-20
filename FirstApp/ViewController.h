@@ -12,12 +12,11 @@
 
 {
     IBOutlet UILabel *MissionSelect;
-    
+    IBOutlet UILabel *label;
 }
 
 -(IBAction) Button:(id)sender;
-@property (weak, nonatomic) IBOutlet UILabel *sliderDisplay;
-@property (weak, nonatomic) IBOutlet UISlider *setValue;
-- (IBAction)applyChanges:(id)sender;
+-(IBAction)slider:(id)sender;
+
 
 @end

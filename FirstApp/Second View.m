@@ -16,7 +16,7 @@
 
 -(IBAction) Button:(id)sender{
     
-    LevelUpButton.text = [NSString stringWithFormat:@"+1000"];
+    LevelUpButton.text = [NSString stringWithFormat:@"Remember, Success is a Journey, not a Destination"];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
