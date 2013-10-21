@@ -1,4 +1,4 @@
-FirstAppiOS
+First App with Xcode 5
 ===========
 10/20/2013 *In-Progress*
 This is my first iOS app for my Code Fellows assignment which includes:
